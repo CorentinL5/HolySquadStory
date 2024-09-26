@@ -5,21 +5,22 @@
 
     --black: #010001;
     --grey: #4A4A4A;
+    --light-grey: #efefef;
 }
 
 @font-face {
     font-family: 'OZIK-Bold.woff2';
-    src: url('assets/fonts/OZIK-Bold.woff2');
+    src: url('../assets/fonts/OZIK-Bold.woff2');
 }
 
 @font-face {
     font-family: 'PPAgrandir-Bold.woff2';
-    src: url('assets/fonts/PPAgrandir-Bold.woff2');
+    src: url('../assets/fonts/PPAgrandir-Bold.woff2');
 }
 
 @font-face {
     font-family: 'PPAgrandir-Medium.woff2';
-    src: url('assets/fonts/PPAgrandir-Medium.woff2');
+    src: url('../assets/fonts/PPAgrandir-Medium.woff2');
 }
 
 * {
@@ -57,20 +58,7 @@ header img {
 header p {
     color: var(--grey);
 }
+
 header a {
     color: var(--nav-text-color);
-}
-
-#timeline li:hover > div > .desc {
-    display: block;
-}
-
-.desc {
-    display: block;
-}
-
-.desc img {
-    margin-top: 10px;
-    width: 35%;
-    border-radius: 25px;
 }
