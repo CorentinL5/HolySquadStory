@@ -1,0 +1,76 @@
+:root {
+    --header-color: #C1ADE6;
+
+    --nav-text-color: #FED107;
+
+    --black: #010001;
+    --grey: #4A4A4A;
+}
+
+@font-face {
+    font-family: 'OZIK-Bold.woff2';
+    src: url('assets/fonts/OZIK-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'PPAgrandir-Bold.woff2';
+    src: url('assets/fonts/PPAgrandir-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'PPAgrandir-Medium.woff2';
+    src: url('assets/fonts/PPAgrandir-Medium.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'PPAgrandir-Medium.woff2', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header {
+    font-family: "OZIK-Bold.woff2", sans-serif;
+    font-size: 1.5em;
+    background-color: var(--header-color);
+    padding: 10px;
+    text-align: center;
+    color: #010001;
+}
+
+header img {
+    max-width: 140px;
+}
+
+header p {
+    color: var(--grey);
+}
+header a {
+    color: var(--nav-text-color);
+}
+
+#timeline li:hover > div > .desc {
+    display: block;
+}
+
+.desc {
+    display: block;
+}
+
+.desc img {
+    margin-top: 10px;
+    width: 35%;
+    border-radius: 25px;
+}
