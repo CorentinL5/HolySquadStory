@@ -25,56 +25,67 @@ function formatDate(date) {
 
 // Fonction pour créer un événement dans la timeline
 function createEvent(event) {
-    const eventElement = document.createElement('li');
+    if (event.title && event.date.match(dateRegex)) {
+        const eventElement = document.createElement('li');
 
-    const direction = document.createElement('div');
-    if (side === "r") { side = "l";} else { side = "r"; }
-    direction.className = 'direction-' + side;
+        const direction = document.createElement('div');
+        if (side === "r") { side = "l";} else { side = "r"; }
+        direction.className = 'direction-' + side;
 
-    const flagWrapper = document.createElement('div');
-    flagWrapper.className = 'flag-wrapper';
+        const flagWrapper = document.createElement('div');
+        flagWrapper.className = 'flag-wrapper';
 
-    const hexa = document.createElement('span');
-    hexa.className = 'hexa';
-    flagWrapper.appendChild(hexa);
+        const hexa = document.createElement('span');
+        hexa.className = 'hexa';
+        flagWrapper.appendChild(hexa);
 
-    const flag = document.createElement('span');
-    flag.className = 'flag';
-    flag.textContent = event.title;
-    flagWrapper.appendChild(flag);
+        const flag = document.createElement('span');
+        flag.className = 'flag';
+        flag.textContent = event.title;
+        flagWrapper.appendChild(flag);
 
-    const timeWrapper = document.createElement('span');
-    timeWrapper.className = 'time-wrapper';
+        const timeWrapper = document.createElement('span');
+        timeWrapper.className = 'time-wrapper';
 
-    const time = document.createElement('span');
-    time.className = 'time';
-    time.textContent = formatDate(event.date);
-    timeWrapper.appendChild(time);
-    flagWrapper.appendChild(timeWrapper);
-    direction.appendChild(flagWrapper);
+        const time = document.createElement('span');
+        time.className = 'time';
+        time.textContent = formatDate(event.date);
+        timeWrapper.appendChild(time);
+        flagWrapper.appendChild(timeWrapper);
+        direction.appendChild(flagWrapper);
 
-    const desc = document.createElement('a');
-    desc.className = 'desc';
-    desc.innerHTML = event.description;
-    if (event.link) {desc.href = event.link;} else {desc.href = '#';}
+        if (event.description) {
+            let desc;
+            if (event.link) {
+                desc = document.createElement('a');
+                desc.href = event.link
+                desc.target = '_blank';
+                desc.rel = 'noopener noreferrer';
+            } else {
+                desc = document.createElement('p');
+            }
+            desc.className = 'desc';
+            desc.innerHTML = event.description;
+            if (event.image) {
+                desc.innerHTML += "<br>";
+                const img = document.createElement('img');
+                img.src = event.image;
+                img.alt = event.title;
+                desc.appendChild(img);
+            }
+            direction.appendChild(desc);
+        }
 
-    desc.target = '_blank';
-    desc.rel = 'noopener noreferrer';
 
-    if (event.image) {
-        desc.innerHTML += "<br>";
-        const img = document.createElement('img');
-        img.src = event.image;
-        img.alt = event.title;
-        desc.appendChild(img);
+
+
+
+        eventElement.appendChild(direction);
+        document.getElementById('timeline').appendChild(eventElement);
     }
-
-    direction.appendChild(desc);
-    eventElement.appendChild(direction);
-    document.getElementById('timeline').appendChild(eventElement);
 }
 
-
+const dateRegex = /(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}).*/;
 let side = "r";
 // Charger les événements depuis le JSON
 fetch('events.json')

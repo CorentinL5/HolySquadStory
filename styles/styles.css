@@ -62,3 +62,19 @@ header p {
 header a {
     color: var(--nav-text-color);
 }
+
+header a:hover {
+    filter: brightness(1.5) saturate(1.5) contrast(1.5);
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+header ul li {
+    margin: 0 10px;
+    text-transform: capitalize;
+}
