@@ -26,61 +26,73 @@ function formatDate(date) {
 // Fonction pour créer un événement dans la timeline
 function createEvent(event) {
     if (event.title && event.date.match(dateRegex)) {
+
         const eventElement = document.createElement('li');
-
-        const direction = document.createElement('div');
-        if (side === "r") { side = "l";} else { side = "r"; }
-        direction.className = 'direction-' + side;
-
-        const flagWrapper = document.createElement('div');
-        flagWrapper.className = 'flag-wrapper';
-
-        const hexa = document.createElement('span');
-        hexa.className = 'hexa';
-        flagWrapper.appendChild(hexa);
-
-        const flag = document.createElement('span');
-        flag.className = 'flag';
-        flag.textContent = event.title;
-        flagWrapper.appendChild(flag);
-
-        const timeWrapper = document.createElement('span');
-        timeWrapper.className = 'time-wrapper';
-
-        const time = document.createElement('span');
-        time.className = 'time';
-        time.textContent = formatDate(event.date);
-        timeWrapper.appendChild(time);
-        flagWrapper.appendChild(timeWrapper);
-        direction.appendChild(flagWrapper);
-
-        if (event.description) {
-            let desc;
-            if (event.link) {
-                desc = document.createElement('a');
-                desc.href = event.link
-                desc.target = '_blank';
-                desc.rel = 'noopener noreferrer';
+        if (event.title === "<hr>") {
+            eventElement.style.textAlign = "center";
+            eventElement.style.fontSize = "2.5em";
+            const year = new Date(event.date).getFullYear();
+            eventElement.innerHTML = `<b>${year}</b><hr>`;
+            eventElement.id = year;
+        } else {
+            const direction = document.createElement('div');
+            if (side === "r") {
+                side = "l";
             } else {
-                desc = document.createElement('p');
+                side = "r";
             }
-            desc.className = 'desc';
-            desc.innerHTML = event.description;
-            if (event.image) {
-                desc.innerHTML += "<br>";
-                const img = document.createElement('img');
-                img.src = event.image;
-                img.alt = event.title;
-                desc.appendChild(img);
+            direction.className = 'direction-' + side;
+
+            const flagWrapper = document.createElement('div');
+            flagWrapper.className = 'flag-wrapper';
+
+            const hexa = document.createElement('span');
+            hexa.className = 'hexa';
+            flagWrapper.appendChild(hexa);
+
+            const flag = document.createElement('span');
+            flag.className = 'flag';
+            flag.textContent = event.title;
+            flagWrapper.appendChild(flag);
+
+            const timeWrapper = document.createElement('span');
+            timeWrapper.className = 'time-wrapper';
+
+            const time = document.createElement('span');
+            time.className = 'time';
+            time.textContent = formatDate(event.date);
+            timeWrapper.appendChild(time);
+            flagWrapper.appendChild(timeWrapper);
+            direction.appendChild(flagWrapper);
+
+            if (event.description) {
+                let desc;
+                if (event.link) {
+                    desc = document.createElement('a');
+                    desc.href = event.link
+                    desc.target = '_blank';
+                    desc.rel = 'noopener noreferrer';
+                } else {
+                    desc = document.createElement('p');
+                }
+                desc.className = 'desc';
+                desc.innerHTML = event.description;
+                if (event.image) {
+                    desc.innerHTML += "<br>";
+                    const img = document.createElement('img');
+                    img.src = event.image;
+                    img.alt = event.title;
+                    desc.appendChild(img);
+                }
+                direction.appendChild(desc);
             }
-            direction.appendChild(desc);
+            eventElement.appendChild(direction);
         }
 
 
 
 
 
-        eventElement.appendChild(direction);
         document.getElementById('timeline').appendChild(eventElement);
     }
 }
