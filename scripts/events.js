@@ -110,7 +110,7 @@ function createOrUpdateEvent(event, index) {
         event.links.forEach(link => {
             const linkElement = document.createElement('a');
             linkElement.href = link.url;
-            linkElement.textContent = link.title;
+            linkElement.textContent = link.item;
             linkElement.target = '_blank';
             linksDiv.appendChild(linkElement);
         });
