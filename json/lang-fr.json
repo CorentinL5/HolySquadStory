@@ -32,7 +32,7 @@
     },
     {
       "date": "2024-09-26T22:05:10",
-      "titre": "HolySquadStory",
+      "title": "HolySquadStory",
       "event": "HolySquadStory",
       "description":"Démarrage du projet HolySquadStory",
       "image": "",
@@ -46,7 +46,7 @@
     },
     {
       "date": "2022-08-17T08:31:50",
-      "titre": "Nouvelle Saveur",
+      "title": "Nouvelle Saveur",
       "event": "HolyEnergy",
       "description": "Peach Panther, Blueberry Bear",
       "image": "",
@@ -55,7 +55,7 @@
     },
     {
       "date": "2022-10-26T20:53:21",
-      "titre": "Halloween Nouvelle Saveur",
+      "title": "Halloween Nouvelle Saveur",
       "event": "HolyEnergy",
       "description": "Pomegranate Piranha",
       "image": "assets/images/Product_Image_Energy_01_Piranha_01_400x.png",
@@ -72,7 +72,7 @@
     },
     {
       "date": "2022-12-11T12:14:42",
-      "titre": "Promotion de noël",
+      "title": "Promotion de noël",
       "description": "À partir de 40€ d'achat, vous recevez notre carte de Noël, <br>from 80€ notre boule de Noël <br>from 120€ a 20€ gift card.",
       "image": "",
       "links": [],
@@ -97,7 +97,7 @@
     },
     {
       "date": "2023-01-29T23:16:54",
-      "titre": "Nouvelle Saveur",
+      "title": "Nouvelle Saveur",
       "description": "Peach x Nectarine x Black Tea <br> Full Pack",
       "image": "assets/images/23_002_20Product_20Images_GoldPack_13_400x.png", 
       "links": [],
@@ -105,7 +105,7 @@
     },
     {
       "date": "2023-01-31T17:45:40",
-      "titre": "Goodies from 30€",
+      "title": "Goodies from 30€",
       "description": "Jusqu'au 3 février 2023",
       "image": "assets/images/Announcement_Banner_Neue_Website_32_1000x.png",
       "links": [],
@@ -169,7 +169,7 @@
     },
     {
       "date": "2023-09-21T16:48:44",
-      "titre":"Nouveau Thermo 700ml",
+      "title":"Nouveau Thermo 700ml",
       "description": "5 dessins",
       "image": "assets/images/Announcement_Banner_Neue_Website_51_1000x.png",
       "links": [],
@@ -177,7 +177,7 @@
     },
     {
       "date": "2023-09-21T16:48:44",
-      "titre": "Cadeau gratuit",
+      "title": "Cadeau gratuit",
       "description": "Recevoir un pot en métal gratuit pour les commandes de plus de €99",
       "image": "assets/images/Announcement_Banner_Neue_Website_50_1000x.png",
       "links": [],
@@ -185,7 +185,7 @@
     },
     {
       "date": "2023-09-30T07:13:16",
-      "titre": "Pré-Vente",
+      "title": "Pré-Vente",
       "description": "Calendriers de l'Avent",
       "image": "assets/images/Announcement_Banner_Neue_Website_52_1000x.png",
       "links": [],
@@ -193,7 +193,7 @@
     },
     {
       "date": "2023-09-30T07:13:16",
-      "titre": "Bétail",
+      "title": "Bétail",
       "description": "Toutes nos saveurs de thé glacé sont de retour",
       "image": "assets/images/Announcement_Banner_Neue_Website_54_1000x.png",
       "links": [],
@@ -201,7 +201,7 @@
     },
     {
       "date": "2023-10-21T21:41:08",
-      "titre": "HOLY Hydration !",
+      "title": "HOLY Hydration !",
       "event": "HolyHydration",
       "description": "Pink Grapefruit <br>Strawberry Kiwi <br>White Peache",
       "image": "assets/images/Announcement_Banner_Neue_Website_57_1000x.png",
@@ -210,7 +210,7 @@
     },
     {
       "date": "2023-10-30T08:28:28",
-      "titre": "Nouvelle Saveur",
+      "title": "Nouvelle Saveur",
       "description": "Cherry Cheetah",
       "image": "assets/images/NE-0021-01_400x.png",
       "links": [],
@@ -234,7 +234,7 @@
     },
     {
       "date": "2024-06-13T07:19:55",
-      "titre": "Vacation !",
+      "title": "Vacation !",
       "description": "Traitez-vous à nos cocktails HOLY Energy® et, avec un peu de chance, gagnez l'un des 10 voyages de rêve d'une valeur de €2 500.",
       "image": "assets/images/HOLYDays_2_1000x.png",
       "links": [],
@@ -242,7 +242,7 @@
     },
     {
       "date": "2024-06-15T09:32:12",
-      "titre": "Nouvelle Saveur",
+      "title": "Nouvelle Saveur",
       "description": "HOLY Energy® Kiwi Komodo !",
       "image": "assets/images/NE-0034-01_400x.png",
       "links": [],
@@ -274,7 +274,7 @@
     },
     {
       "date": "2024/08/28T16:00:00",
-      "titre": "Nouvelles Saveurs",
+      "title": "Nouvelles Saveurs",
       "description": "HOLY Iced Tea® Pastèque x Hibiscus <br>HOLY Iced Tea® Honey Melon x Green Tea",
       "image": "",
       "links": [],
@@ -322,7 +322,7 @@
       "banner_color": "#292b2f",
       "links": [
         {
-          "titre": "Github",
+          "title": "Github",
           "url": "https://github.com/CorentinL5"
         }
       ],
@@ -336,7 +336,7 @@
       "banner_color": "#b9b7b7",
       "links": [
         {
-          "titre": "Steam",
+          "title": "Steam",
           "url": "https://steamcommunity.com/id/Just_Me013/"
         }
       ],
