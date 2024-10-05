@@ -12,6 +12,11 @@
     margin-bottom: 40px;
 }
 
+/* Hide the year div if it's not set */
+#HolySquadStory #year-NaN {
+    display: none;
+}
+
 /* Year header */
 #HolySquadStory .timeline-year h2 {
     font-size: 2em;
