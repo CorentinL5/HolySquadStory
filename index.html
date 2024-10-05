@@ -28,7 +28,8 @@
         <meta property="twitter:url" content="https://corentinl5.github.io/HolySquadStory/index.html">
         <meta name="twitter:title" content="HolySquadStory">
         <meta name="twitter:description" content="Story of the HolySquad">
-        <meta name="twitter:image" content="https://corentinl5.github.io/HolySquadStory/assets/logo/HOLY_Logo_Menu_280x.png">
+        <meta name="twitter:image"
+              content="https://corentinl5.github.io/HolySquadStory/assets/logo/HOLY_Logo_Menu_280x.png">
 
 
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -44,19 +45,30 @@
     <body>
         <header>
             <img src="assets/logo/HOLY_Logo_Menu_280x.png" alt="HolySquad logo">
-            <a href="https://github.com/CorentinL5/HolySquadStory/" target="_blank" rel="noopener noreferrer"><p>Github Project</p></a>
-            <h1>HolySquad Story</h1>
+            <a href="https://github.com/CorentinL5/HolySquadStory/" target="_blank" rel="noopener noreferrer">
+                <p data-translate="githubProject">Github Project</p>
+            </a>
+            <h1 data-translate="header">HolySquad Story</h1>
             <ul>
-                <li><a href="https://fr.weareholy.com" target="_blank" rel="noopener noreferrer"><img src="assets/flags/flag-fr.svg" alt="flag-fr"></a></li>
-                <li><a href="https://uk.weareholy.com" target="_blank" rel="noopener noreferrer"><img src="assets/flags/flag-gb.svg" alt="flag-gb"></a></li>
-                <li><a href="https://de.weareholy.com" target="_blank" rel="noopener noreferrer"><img src="assets/flags/flag-de.svg" alt="flag-de"></a></li>
+                <li><a href="https://fr.weareholy.com" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/flags/flag-fr.svg" alt="flag-fr"></a></li>
+                <li><a href="https://uk.weareholy.com" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/flags/flag-uk.svg" alt="flag-gb"></a></li>
+                <li><a href="https://de.weareholy.com" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/flags/flag-de.svg" alt="flag-de"></a></li>
             </ul>
         </header>
+        <main>
+            <div id="switchLanguage">
+                <!-- Language Button switchers -->
+            </div>
 
-        <div id="HolySquadStory">
+            <div id="HolySquadStory">
+                <!-- All Events are dynamically added here -->
+            </div>
+        </main>
 
-        </div>
-
-        <script src="scripts/script.js"></script>
+        <script src="scripts/language.js"></script>
+        <script src="scripts/events.js"></script>
     </body>
 </html>

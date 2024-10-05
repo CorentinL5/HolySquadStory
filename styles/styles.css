@@ -32,6 +32,7 @@
 
 html {
     font-family: 'PPAgrandir-Medium.woff2', sans-serif;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -78,4 +79,37 @@ header ul {
 header ul li img {
     margin: 0 10px;
     width: 2em;
+}
+
+
+#switchLanguage {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#switchLanguage img {
+    width: 3.25rem;
+    text-transform: capitalize;
+}
+
+#switchLanguage button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#switchLanguage button:not(.active) {
+    display: none;
+}
+
+#switchLanguage:hover button {
+    display: block;
+}
+
+#switchLanguage button.active {
+    order: -1;
 }

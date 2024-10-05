@@ -1,40 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_503_3849)">
-<rect width="28" height="20" rx="2" fill="white"/>
-<mask id="mask0_503_3849" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
-<rect width="28" height="20" rx="2" fill="white"/>
-</mask>
-<g mask="url(#mask0_503_3849)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.66667H28V0H0V6.66667Z" fill="#262626"/>
-<g filter="url(#filter0_d_503_3849)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.3333H28V6.66666H0V13.3333Z" fill="#F01515"/>
-</g>
-<g filter="url(#filter1_d_503_3849)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H28V13.3333H0V20Z" fill="#FFD521"/>
-</g>
-</g>
-</g>
-<defs>
-<filter id="filter0_d_503_3849" x="0" y="6.66666" width="28" height="6.66666" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_503_3849"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_503_3849" result="shape"/>
-</filter>
-<filter id="filter1_d_503_3849" x="0" y="13.3333" width="28" height="6.66666" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_503_3849"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_503_3849" result="shape"/>
-</filter>
-<clipPath id="clip0_503_3849">
-<rect width="28" height="20" rx="2" fill="white"/>
-</clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve">
+  <path style="fill:#ed1f34" d="M8.258 200.946h495.484v110.108H8.258z"/>
+  <path style="fill:#ffe000" d="M8.258 385.743c0 19.561 15.858 35.418 35.418 35.418h424.648c19.561 0 35.418-15.858 35.418-35.418v-74.689H8.258z"/>
+  <path style="fill:#333" d="M468.324 90.839H43.676c-19.561 0-35.418 15.857-35.418 35.418v74.689h495.484v-74.689c0-19.562-15.857-35.418-35.418-35.418"/>
+  <path style="fill:#121b21" d="M468.324 82.581H43.676C19.593 82.581 0 102.173 0 126.257v259.487c0 24.083 19.593 43.675 43.676 43.675h424.648c24.082 0 43.675-19.593 43.675-43.676V126.257c.001-24.084-19.593-43.676-43.675-43.676M43.676 99.097h424.648c14.976 0 27.159 12.183 27.159 27.16v66.431H16.516v-66.431c0-14.977 12.184-27.16 27.16-27.16m424.648 313.806H43.676c-14.977 0-27.16-12.183-27.16-27.16v-66.431h388.129a8.257 8.257 0 0 0 8.258-8.258 8.257 8.257 0 0 0-8.258-8.258H16.516v-93.591h478.968v176.539c0 14.976-12.184 27.159-27.16 27.159"/>
 </svg>
