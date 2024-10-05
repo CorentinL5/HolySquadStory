@@ -4,9 +4,6 @@
 
 <hr>
 <div align="center">
-<h2>🧐 Features </h2>
-
-**⠂⠂⠂ Garde ton choix de groupe ⠂⠂⠂**
 
 <h2>💻 Build with</h2>
 
@@ -15,6 +12,14 @@
 <br><img src="https://corentinl5.github.io/CorentinL5/assets/skills/javascript.svg" width="35em" alt="JS">
 <img src="https://corentinl5.github.io/CorentinL5/assets/skills/json.svg" width="35em" alt="JSON">
 
+<h2>📚 Tools</h2>
+
+<a href="https://www.svgrepo.com/collection/flags-collection-4/">
+    <img src="https://www.svgrepo.com/logo.svg" alt="svgrepo">
+</a>
+<a href="https://www.svgviewer.dev/">
+    <img src="https://www.svgviewer.dev/images/logo.svg" alt="svgrepo">
+</a>
 
 <h2>🛡️ License</h2>
 
