@@ -1,0 +1,355 @@
+{
+    "header": "HolySquad Story",
+    "githubProject": "Github Project",
+    "events": [
+        {
+            "date": "2020-12-18T20:05:35",
+            "title": "Discord Launch",
+            "event": "HolySquad",
+            "description": "Start and launch of the Discord server",
+            "image": "assets/images/logo_discord.webp",
+            "links": [
+                {
+                    "title": "Discord",
+                    "url": "https://discord.gg/holyenergy"
+                }
+            ],
+            "source": "https://discord.id/"
+        },
+        {
+            "date": "2020-04-11T18:53:58",
+            "title": "Website Domain Created",
+            "event": "HolySquad",
+            "description": "Domain of the website Created <br><i>(weareholy.com)</i>",
+            "image": "",
+            "links": [
+                {
+                    "title": "Website",
+                    "url": "https://weareholy.com"
+                }
+            ],
+            "source": "https://smallseotools.com/domain-age-checker/"
+        },
+        {
+            "date": "2024-09-26T22:05:10",
+            "title": "HolySquadStory",
+            "event": "HolySquadStory",
+            "description": "Start of the HolySquadStory project",
+            "image": "",
+            "links": [
+                {
+                    "title": "GitHub",
+                    "url": "https://github.com/CorentinL5/HolySquadStory"
+                }
+            ],
+            "source": "Me... I'm the source Dude !"
+        },
+        {
+            "date": "2022-08-17T08:31:50",
+            "title": "New Flavor",
+            "event": "HolyEnergy",
+            "description": "Peach Panther, Blueberry Bear",
+            "image": "",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2022-10-26T20:53:21",
+            "title": "Halloween New Flavor",
+            "event": "HolyEnergy",
+            "description": "Pomegranate Piranha",
+            "image": "assets/images/Product_Image_Energy_01_Piranha_01_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2022-10-26T20:53:21",
+            "title": "Halloween Event",
+            "description": "Ps5 and Sweats Giveaway",
+            "image": "assets/images/Announcement_Bar_Gewinnspiel_Piranha_FR_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2022-12-11T12:14:42",
+            "title": "Christmas promotion",
+            "description": "From 40€ of purchase, you receive our Christmas card, <br>from 80€ our Christmas bauble <br>from 120€ a 20€ gift card.",
+            "image": "",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2022-12-11T12:14:42",
+            "title": "Limited Christmas Flavor Edition",
+            "description": "Baked Apple Boar, HOLY Xmas <br> Full Pack",
+            "image": "assets/images/5_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-01-01T16:15:50",
+            "title": "2023 - Happy New Year",
+            "event": "HolyIcedTea",
+            "description": "Raspberry x Vanilla",
+            "image": "",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-01-29T23:16:54",
+            "title": "New Flavor",
+            "description": "Peach x Nectarine x Black Tea <br> Full Pack",
+            "image": "assets/images/23_002_20Product_20Images_GoldPack_13_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-01-31T17:45:40",
+            "title": "Goodies from 30€",
+            "description": "Until February 3 2023",
+            "image": "assets/images/Announcement_Banner_Neue_Website_32_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-03-06T22:43:50",
+            "title": "2023 Boost Motivation Pack",
+            "description": "3x pots Energy <br>3x échantillons Energy <br>1x Logo shaker",
+            "image": "assets/images/ProductImages_NewTrialPack_TP_01_1_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-05-21T12:47:00",
+            "title": "Iced Tea 27% discount",
+            "description": "Apple x Green Tea Pack <br>Blackberry x Black Tea Pack",
+            "image": "assets/images/23_005_AnnouncementBar_DE_2_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-06-01T19:53:43",
+            "title": "New Flavors 2x",
+            "description": "Gorilla's Grape <br> Red Grapes x Hibiscus Tea !",
+            "image": "assets/images/Announcement_Banner_Neue_Website_45_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-07-02T10:33:44",
+            "title": "new Iced Tea Flavor",
+            "description": "Lime x Matcha x Mint x Green Tea",
+            "image": "assets/images/IP-0009_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-07-02T10:33:44",
+            "title": "Come back Flavor",
+            "description": "Peach x Nectarine x Black Tea",
+            "image": "assets/images/23_002_20Product_20Images_Pouch_01_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-09-01T22:36:28",
+            "title": "Come back Flavor 3x",
+            "description": "Lion, Camel & Gorilla !",
+            "image": "assets/images/23_021_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-09-05T22:57:08",
+            "title": "New Starter Set",
+            "description": "7 delicious flavours <br>14 servings <br>Free shaker ",
+            "image": "assets/images/Announcement_Banner_Neue_Website_49_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-09-21T16:48:44",
+            "title": "New Thermo 700ml",
+            "description": "5 designes",
+            "image": "assets/images/Announcement_Banner_Neue_Website_51_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-09-21T16:48:44",
+            "title": "Free Gift",
+            "description": "Receive a free metal jar for orders over €99",
+            "image": "assets/images/Announcement_Banner_Neue_Website_50_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-09-30T07:13:16",
+            "title": "Pre-Sale",
+            "description": "Advent Calendars",
+            "image": "assets/images/Announcement_Banner_Neue_Website_52_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-09-30T07:13:16",
+            "title": "Restock",
+            "description": "All our Iced Tea flavours are back",
+            "image": "assets/images/Announcement_Banner_Neue_Website_54_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-10-21T21:41:08",
+            "title": "HOLY Hydration !",
+            "event": "HolyHydration",
+            "description": "Pink Grapefruit <br>Strawberry Kiwi <br>White Peache",
+            "image": "assets/images/Announcement_Banner_Neue_Website_57_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-10-30T08:28:28",
+            "title": "New Flavor",
+            "description": "Cherry Cheetah",
+            "image": "assets/images/NE-0021-01_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2023-11-27T12:42:05",
+            "title": "Black Week 3x new Flavors",
+            "description": "Wildberry Wolf <br>Woodruff Wolf <br>Bubblegum Butterfly ",
+            "image": "assets/images/68_b07c2c09-5852-4fea-980b-d18384e69363_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2024-03-24T10:35:40",
+            "title": "New lemon DUO",
+            "description": "HOLY Iced Tea® Lemon x Honey <br>HOLY Hydration® Lemon",
+            "image": "assets/images/HOLY_MixMatch_Lemon_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2024-06-13T07:19:55",
+            "title": "Vacation !",
+            "description": "Treat yourself to our HOLY Energy® cocktails and, with a bit of luck, win one of 10 dream trips worth €2,500.",
+            "image": "assets/images/HOLYDays_2_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2024-06-15T09:32:12",
+            "title": "New Flavor",
+            "description": "HOLY Energy® Kiwi Komodo !",
+            "image": "assets/images/NE-0034-01_400x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2024-09-20T10:01:59",
+            "title": "new HOLY Hydration® Starter Set",
+            "description": "Now with Lemon, Coconut, Pineapple & Sour Cherry flavors!",
+            "image": "assets/images/Announcement_Banner_Neue_Website_7_73925c9d-dc8a-4a60-b624-9bad8bae5480_1000x.png",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2024-09-03T14:21:00",
+            "title": "5 new Community Thermo Shakers",
+            "description": "your HOLY stays ice-cold or hot all day long! Perfect for at home and on the go. Now in 5 new colors!",
+            "image": "assets/images/Announcement_Banner_Neue_Website_70_1000x.png",
+            "links": [],
+            "source": "https://discord.gg/holyenergy"
+        },
+        {
+            "date": "2024-09-26T16:00:00",
+            "title": "Advent calendars 2024",
+            "description": "Discover what's behind these 24 doors: tastes that snap and feel good, and some great surprises!",
+            "image": "assets/images/Announcement_Banner_Calendar_1000x.webp",
+            "links": [],
+            "source": "https://web.archive.org/"
+        },
+        {
+            "date": "2024/08/28T16:00:00",
+            "title": "New Flavors",
+            "description": "HOLY Iced Tea® Watermelon x Hibiscus <br>HOLY Iced Tea® Honey Melon x Green Tea",
+            "image": "",
+            "links": [],
+            "source": "https://discord.gg/holyenergy"
+        },
+        {
+            "date": "2024-07-25T16:00:00",
+            "title": "3 new HOLY Hydration® Flavors",
+            "description": "Sour Cherry <br>Pineapple <br>Coconut",
+            "image": "assets/images/dc0f18785b3988afc06bb28fdc064db4efefbff3.jpg",
+            "links": [],
+            "source": "https://discord.gg/holyenergy"
+        },
+        {
+            "date": "2024-07-04T11:55:00",
+            "title": "Individual samples",
+            "description": "In the store you'll find individual samples of (almost) every Energy & Iced Tea variety.",
+            "image": "",
+            "links": [],
+            "source": "https://discord.gg/holyenergy"
+        },
+        {
+            "date": "2024-07-04T16:00:00",
+            "title": " HOLY Energy® x Hitschies",
+            "description": "Apple Alligator, Tropical Fruity Frog and Raspberry Raptor Hitschies flavors",
+            "image": "assets/images/55edbb6924d98ceec5ccd5ca119d529c3a028893.jpg",
+            "links": [],
+            "source": "https://discord.gg/holyenergy"
+        },
+        {
+            "date": "2024-07-04T16:00:00",
+            "title": " HOLY Energy® x Hitschies",
+            "description": "Dragon tongues <br>Spider legs <br>Kraken tentacles",
+            "image": "assets/images/HeroSection_Desktop_hitschies_01.png",
+            "links": [],
+            "source": "https://discord.gg/holyenergy"
+        }
+    ],
+    "contributors": [
+    {
+        "user_id": "639885129183002654",
+        "name": "tarumo",
+        "avatar": "https://cdn.discordapp.com/avatars/639885129183002654/d58db28a7785ee24724762a19961a4bb.png",
+        "Created": "2019-11-01T17:55:03",
+        "banner_color": "#292b2f",
+        "links": [
+            {
+                "title": "Github",
+                "url": "https://github.com/CorentinL5"
+            }
+        ],
+        "participation": "Creator and main developer of the project."
+    },
+    {
+        "user_id": "270563296619266049",
+        "name": "alderaane",
+        "avatar": "https://cdn.discordapp.com/avatars/270563296619266049/f1a2ddc62901bfa70482f7499682707f.png",
+        "Created": "2017-01-17T14:41:56",
+        "banner_color": "#b9b7b7",
+        "links": [
+            {
+                "title":  "Steam",
+                "url": "https://steamcommunity.com/id/Just_Me013/"
+            }
+        ],
+        "participation": "First Interacted at the beginning of the project."
+    },
+    {
+        "user_id": "545222203030110208",
+        "name": "lelitlegamer",
+        "avatar": "https://cdn.discordapp.com/avatars/545222203030110208/260e7c3f04c885617a7c515b89010d16.png",
+        "Created": "2019-02-13T12:38:22",
+        "banner_color": "#93d49f",
+        "links": [],
+        "participation": "Interacted at the beginning of the project."
+    }
+]
+}
