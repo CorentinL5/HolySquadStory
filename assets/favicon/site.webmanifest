@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "HolySquadStory",
+    "short_name": "HolySquadStory",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -16,4 +16,5 @@
     "theme_color": "#C1ADE6",
     "background_color": "#ffffff",
     "display": "standalone"
+
 }

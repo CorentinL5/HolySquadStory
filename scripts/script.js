@@ -1,107 +1,136 @@
-function formatDate(date) {
-  // Convertir la date en objet Date
-  const jsDate = new Date(date);
+// Function to format a date
+function formatDate(date, lang = "en-US") {
+    const jsDate = new Date(date);
+    const dateOptions = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+    const timeOptions = { hour: 'numeric', minute: 'numeric' };
 
-  // Vérifier si l'heure est 00:00
-  const isMidnight = jsDate.getHours() === 0 && jsDate.getMinutes() === 0;
+    // Formate la date (jour, mois, année)
+    const formattedDate = jsDate.toLocaleDateString(lang, dateOptions);
 
-  // Définir les options pour le formatage de la date
-  const dateOptions = {
-    weekday: 'short',
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  };
+    // Vérifie si l'heure est 00:00
+    const isMidnight = jsDate.getHours() === 0 && jsDate.getMinutes() === 0;
 
-  // Ajouter l'heure aux options seulement si ce n'est pas minuit
-  if (!isMidnight) {
-    dateOptions.hour = 'numeric';
-    dateOptions.minute = 'numeric';
-  }
+    // Si ce n'est pas minuit, formate l'heure
+    const formattedTime = !isMidnight ? jsDate.toLocaleTimeString(lang, timeOptions) : null;
 
-  // Formatter la date en utilisant les options
-  return jsDate.toLocaleString('fr-BE', dateOptions);
+    return { date: formattedDate, time: formattedTime };
 }
 
-// Fonction pour créer un événement dans la timeline
+// Function to create an event
 function createEvent(event) {
     if (event.title && event.date.match(dateRegex)) {
+        const HolySquadStory = document.getElementById('HolySquadStory');
+        const eventYear = new Date(event.date).getFullYear();
+        const { date: eventDate, time: eventTime } = formatDate(event.date);
 
-        let eventElement = document.createElement('li');
-        if (actualYearDate !== new Date(event.date).getFullYear()) {
-            actualYearDate = new Date(event.date).getFullYear();
-            eventElement.style.textAlign = "center";
-            eventElement.style.fontSize = "2.5em";
-            eventElement.innerHTML = `<b>${actualYearDate}</b><hr>`;
-            eventElement.id = actualYearDate;
-            document.getElementById('timeline').appendChild(eventElement);
-            eventElement = document.createElement('li');
+        // Sélectionner la couleur de l'événement
+        const color = holyEventsColors[event.event] || holyEventsColors["Other"];
 
+        // Cherche si l'année existe déjà dans la timeline
+        let timelineYear = document.getElementById(`year-${eventYear}`);
+        if (!timelineYear) {
+            timelineYear = document.createElement('div');
+            timelineYear.id = `year-${eventYear}`;
+            timelineYear.className = 'timeline-year';
+            timelineYear.innerHTML = `<h2>${eventYear}</h2>`;
+            HolySquadStory.appendChild(timelineYear);
         }
-        const direction = document.createElement('div');
-        if (side === "r") {
-            side = "l";
-        } else {
-            side = "r";
+
+        // Cherche si une section pour la même date existe déjà
+        let dateContainer = timelineYear.querySelector(`[data-date='${eventDate}']`);
+        if (!dateContainer) {
+            dateContainer = document.createElement('div');
+            dateContainer.className = 'date-container';
+            dateContainer.setAttribute('data-date', eventDate);
+
+            const dateHeader = document.createElement('div');
+            dateHeader.className = 'date-header';
+            dateHeader.textContent = eventDate;
+
+            dateContainer.appendChild(dateHeader);
+            timelineYear.appendChild(dateContainer);
         }
-        direction.className = 'direction-' + side;
 
-        const flagWrapper = document.createElement('div');
-        flagWrapper.className = 'flag-wrapper';
+        // Création du conteneur pour l'événement
+        const eventElement = document.createElement('div');
+        eventElement.className = 'event';
+        eventElement.style.borderLeft = `5px solid ${color}`; // Appliquer la couleur de l'événement
 
-        const hexa = document.createElement('span');
-        hexa.className = 'hexa';
-        flagWrapper.appendChild(hexa);
+        // Ajout de l'en-tête de l'événement (titre)
+        const header = document.createElement('div');
+        header.className = 'event-header';
 
-        const flag = document.createElement('span');
-        flag.className = 'flag';
-        flag.textContent = event.title;
-        flagWrapper.appendChild(flag);
+        const title = document.createElement('h3');
+        title.className = 'event-title';
+        title.textContent = event.title;
 
-        const timeWrapper = document.createElement('span');
-        timeWrapper.className = 'time-wrapper';
+        // Ajout de l'heure si elle existe
+        if (eventTime) {
+            const timeElement = document.createElement('span');
+            timeElement.className = 'event-time';
+            timeElement.textContent = eventTime;
+            header.appendChild(timeElement);
+        }
 
-        const time = document.createElement('span');
-        time.className = 'time';
-        time.textContent = formatDate(event.date);
-        timeWrapper.appendChild(time);
-        flagWrapper.appendChild(timeWrapper);
-        direction.appendChild(flagWrapper);
+        header.appendChild(title);
+        eventElement.appendChild(header);
 
+        // Ajout de la description si elle existe
         if (event.description) {
-            let desc;
-            if (event.link) {
-                desc = document.createElement('a');
-                desc.href = event.link
-                desc.target = '_blank';
-                desc.rel = 'noopener noreferrer';
-            } else {
-                desc = document.createElement('p');
-            }
-            desc.className = 'desc';
-            desc.innerHTML = event.description;
-            if (event.image) {
-                desc.innerHTML += "<br>";
-                const img = document.createElement('img');
-                img.src = event.image;
-                img.alt = event.title;
-                desc.appendChild(img);
-            }
-            direction.appendChild(desc);
+            const description = document.createElement('p');
+            description.className = 'event-description';
+            description.innerHTML = event.description;
+            eventElement.appendChild(description);
         }
 
-        eventElement.appendChild(direction);
+        // Ajout de l'image si elle existe
+        if (event.image) {
+            const imageDiv = document.createElement('div');
+            imageDiv.className = 'event-image';
 
-        document.getElementById('timeline').appendChild(eventElement);
+            const image = document.createElement('img');
+            image.src = event.image;
+            image.alt = event.title;
+
+            imageDiv.appendChild(image);
+            eventElement.appendChild(imageDiv);
+        }
+
+        // Ajout du lien si disponible
+        if (event.links.length > 0) {
+            const linksDiv = document.createElement('div');
+            linksDiv.className = 'event-links';
+
+            event.links.forEach(link => {
+                console.log(link);
+                const linkElement = document.createElement('a');
+                linkElement.href = link.url;
+                linkElement.textContent = link.title;
+                linkElement.target = '_blank';
+                linksDiv.appendChild(linkElement);
+            });
+
+            eventElement.appendChild(linksDiv);
+        }
+
+        // Ajoute l'événement au conteneur de la date correspondante
+        dateContainer.appendChild(eventElement);
     }
 }
 
-const dateRegex = /(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}).*/;
-let side = "r";
-let actualYearDate;
 
-// Charger les événements depuis le JSON
-fetch('events.json')
+const dateRegex = /(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}).*/;
+const holyEventsColors = {
+    "HolySquadStory" : "#C1ADE6",
+    "HolySquad": "#FDD600",
+    "HolyEnergy": "#FE3183",
+    "HolyIcedTea": "#A97BD4",
+    "HolyHydration": "#01C5FE",
+    "Other": "#646464"
+};
+
+// Load events from JSON file
+fetch('json/events.json')
     .then(response => response.json())
     .then(data => {
         // Trier les événements par date
@@ -109,7 +138,6 @@ fetch('events.json')
             // Extraire les dates et heures et les convertir en objets Date
             const dateA = new Date(a.date);
             const dateB = new Date(b.date);
-            console.log(dateA, dateB);
             return dateA - dateB; // Comparer les dates
         });
 

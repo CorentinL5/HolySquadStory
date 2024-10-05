@@ -5,7 +5,8 @@
 
     --black: #010001;
     --grey: #4A4A4A;
-    --light-grey: #efefef;
+    --light-grey: #e6e6e6;
+    --lighter-grey: #fafafa;
 }
 
 @font-face {
@@ -64,7 +65,7 @@ header a {
 }
 
 header a:hover {
-    filter: brightness(1.5) saturate(1.5) contrast(1.5);
+    filter: contrast(1.5) grayscale(0.2);
 }
 
 header ul {
@@ -74,7 +75,7 @@ header ul {
     padding: 10px;
 }
 
-header ul li {
+header ul li img {
     margin: 0 10px;
-    text-transform: capitalize;
+    width: 2em;
 }
