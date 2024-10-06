@@ -33,7 +33,6 @@ function LoadAllLanguages(language) {
     loadEvents(language);
     // Update .active class for the selected language
     document.getElementById('switchLanguage').querySelectorAll('button').forEach((element) => {
-        console.log(element);
         element.className = "";
         if (element.getAttribute('data-lang') === currentLanguage) {
             element.className = "active";
