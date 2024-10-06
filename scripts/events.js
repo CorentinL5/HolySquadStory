@@ -17,10 +17,10 @@ function formatDate(date, lang = "en-US") {
 }
 
 // Function to create or update an event
-function createOrUpdateEvent(event, index) {
+function createOrUpdateEvent(event, index, language) {
     const HolySquadStory = document.getElementById('HolySquadStory');
     const eventYear = new Date(event.date).getFullYear();
-    const { date: eventDate, time: eventTime } = formatDate(event.date);
+    const { date: eventDate, time: eventTime } = formatDate(event.date, language);
 
     // Select the color of the event
     const color = holyEventsColors[event.event] || holyEventsColors["Other"];
@@ -137,7 +137,7 @@ function loadEvents(language) {
             data["events"].sort((a, b) => new Date(a.date) - new Date(b.date));
 
             // Create or update the sorted events
-            data["events"].forEach((event, index) => createOrUpdateEvent(event, index));
+            data["events"].forEach((event, index) => createOrUpdateEvent(event, index, language));
             console.log('Events loaded and sorted');
         })
         .catch(error => console.error('Error loading events:', error));

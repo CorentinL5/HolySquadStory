@@ -55,6 +55,7 @@
 /* Date header */
 #HolySquadStory .date-header {
     font-family: 'OZIK-Bold.woff2', monospace;
+    text-transform: capitalize;
     font-size: 2.25em;
     font-weight: 600;
     color: #555;
@@ -81,6 +82,7 @@
 
 /* Event header */
 #HolySquadStory .event-header {
+    font-family: 'PPAgrandir-Bold.woff2', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,6 +150,7 @@
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: border-color 0.2s ease-in-out;
+    margin: 0 2px;
 }
 
 #HolySquadStory .event-links a:hover {
@@ -161,7 +164,7 @@
     }
 
     #HolySquadStory .timeline-year h2 {
-        font-size: 1.8em;
+        font-size: 2.5em;
     }
 
     #HolySquadStory .event-header {
@@ -188,7 +191,7 @@
     }
 
     #HolySquadStory .timeline-year h2 {
-        font-size: 1.6em;
+        font-size: 2.25em;
     }
 
     #HolySquadStory .event {
@@ -206,7 +209,7 @@
     }
 
     #HolySquadStory .timeline-year h2 {
-        font-size: 1.4em;
+        font-size: 2em;
     }
 
     #HolySquadStory .event {
@@ -226,7 +229,11 @@
         font-size: 0.85em;
     }
 
-    #HolySquadStory .event-link {
-        font-size: 0.9em;
+    #HolySquadStory .event-image {
+        justify-content: center;
+    }
+
+    #HolySquadStory .event-links {
+        justify-content: right;
     }
 }
