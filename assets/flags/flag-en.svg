@@ -1,10 +1,10 @@
-<svg width="512" height="512" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 20 20">
   <defs>
     <clipPath id="a">
-      <polygon points="0,0 20,3.2 0,16.8"/>
+      <polygon points="0,0 20,3.3 0,16.7"/>
     </clipPath>
     <clipPath id="b">
-      <polygon points="20,3.2 20,20 0,16.8"/>
+      <polygon points="20,3.3 20,20 0,16.7"/>
     </clipPath>
   </defs>
   <g clip-path="url(#a)">
